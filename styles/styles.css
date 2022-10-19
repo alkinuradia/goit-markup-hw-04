@@ -139,8 +139,15 @@ span {
 	letter-spacing: 0.02em;
 	color: var(--main-color);
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
 }
 
+.contact-icon {
+	fill: var(--main-color);
+}
 .header-item-link.current {
 	color: var(--main-bg-color);
 }
@@ -151,7 +158,12 @@ span {
 .header-mail:focus {
 	color: var(--main-bg-color);
 }
-
+.header-tel:hover .contact-icon,
+.header-tel:focus .contact-icon,
+.header-mail:hover .contact-icon,
+.header-mail:focus .contact-icon{
+	fill: var(--main-bg-color);
+}
 .hero {
 	background-color: #2f303a;
 	background-image: linear-gradient(
@@ -341,6 +353,20 @@ span {
 	align-items: center;
 	justify-content: center;
 }
+.client-icon {
+	fill: #AFB1B8;
+}
+
+.client-link:hover,
+.client-link:focus {
+	border-color: var(--main-bg-color);
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+	fill: var(--main-bg-color);
+}
+
 
 .bottom {
 	background-color: #2f303a;
@@ -401,6 +427,12 @@ span {
 .bottom-tel:hover,
 .bottom-tel:focus {
 	color: var(--main-bg-color);
+}
+
+.footer-container {
+	display: flex;
+	align-items: baseline;
+	gap: 70px;
 }
 .soc-text {
 	font-family: 'Roboto', sans-serif;;
