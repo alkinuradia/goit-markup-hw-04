@@ -165,6 +165,10 @@ span {
 	fill: var(--main-bg-color);
 }
 .hero {
+	max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 	background-color: #2f303a;
 	background-image: linear-gradient(
 	    rgba(47, 48, 58, 0.4),
